@@ -1,0 +1,17 @@
+root = true
+
+[*.{fs,fsx}]
+tab_width = 4
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = crlf
+charset = utf-8
+
+max_line_length = 120
+fsharp_max_infix_operator_expression = 60
+fsharp_max_array_or_list_width = 40
+fsharp_max_value_binding_width = 60
+fsharp_max_dot_get_expression_width = 40
+fsharp_multiline_bracket_style = stroustrup

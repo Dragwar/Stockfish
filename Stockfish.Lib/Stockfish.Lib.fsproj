@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>Dragwar</Authors>
+		<Title>Stockfish.Lib</Title>
+		<Summary>A F# wrapper around Stockfish's cli</Summary>
+		<Description>A F# wrapper around Stockfish's cli</Description>
+		<PackageProjectUrl>https://github.com/Dragwar/Stockfish</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Dragwar/Stockfish</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>fsharp; dotnet; dotnet-core; stockfish; stockfish-lib; wrapper</PackageTags>
+		<PackageReleaseNotes>First Release</PackageReleaseNotes>
+		<PackageVersion>1.0.0</PackageVersion>
+		<PackageIcon>stockfish-icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<NeutralLanguage>en</NeutralLanguage>
+		<ApplicationIcon>../stockfish-icon.png</ApplicationIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../README.md" Pack="true" PackagePath="/">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="../stockfish-icon.png" Pack="true" PackagePath="">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="Library.fs" />
+	</ItemGroup>
+
+</Project>
